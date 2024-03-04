@@ -27,7 +27,9 @@ const feedSourceQueue = async () => {
 }
 
 feedSourceQueue().then(() => {
-    console.log('queue sent')
+    console.log('queue sent');
+
+    myQueue.close();
 });
 
 
